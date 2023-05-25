@@ -146,6 +146,7 @@ body{
 }
 
 #meeting-main-head{
+    color: #28282D;
     font-size: 40px;
     line-height: 44px;
     letter-spacing: 4px;
@@ -177,6 +178,7 @@ body{
     background-color: #fff;
     position: relative;
     z-index: 2;
+    color: #28282D;
 }
 #footer-section{
     position: relative;
@@ -220,7 +222,7 @@ body{
     color: white;
     font-weight: 400;
 }
-/* #D9B8FF */
+
 #experience-right-button:hover{
     opacity: 0.8;
     background-color: #855FB1;
