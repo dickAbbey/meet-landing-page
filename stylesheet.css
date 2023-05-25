@@ -1,0 +1,232 @@
+body{
+    font-family: 'Red Hat Display', sans-serif;
+    color:#FAFAFA;
+}
+
+#header{
+    display: flex;
+    justify-content: center;
+    margin: 50px auto;
+}
+
+.hero-section{
+    height: 80vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+#hero-middle{
+    margin: auto;
+    text-align: center;
+    padding: 25px 50px;
+    color:#28282D;
+    /* background-color: pink; */
+}
+
+#hero-head{
+    font-size: 64px;
+    line-height: 64px;
+    /* font-family: 'Red Hat Display', sans-serif; */
+    font-weight: 900;
+    padding: auto 840px;
+}
+
+#hero-body{
+    margin: 30px auto;
+    color:#87879D;
+    font-family: 'Red Hat Display', sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 26px;
+}
+
+#hero-buttons{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    column-gap: 15px;
+    margin-bottom: 150px;
+}
+#hero-button-left{
+    background-color: #4D96A9;
+    padding: 20px 40px;
+    border-radius: 50px;
+    color: white;
+    font-family: 'Red Hat Display', sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 26px;
+}
+
+#hero-button-left:hover{
+    background-color: #8FE3f9;
+    padding: 20px 40px;
+    border-radius: 50px;
+    color: white;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 26px;
+}
+
+#btn-link{
+    text-decoration: none;
+    color: white;
+}
+
+.btn-version{
+    color:#8FE3F9;
+}
+.btn-version:hover{
+    /* color:; */
+}
+#hero-button-right{
+    background-color: #855FB1;
+    padding: 20px 40px;
+    border-radius: 50px;
+    color: white;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 26px;
+}
+
+#hero-button-right:hover{
+    background-color: #D9B8FF;
+    padding: 20px 40px;
+    border-radius: 50px;
+    color: white;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 26px;
+}
+
+#hero-pagination{
+}
+
+#thin-line{
+    width: 100px;
+    rotate: 90deg;
+}
+
+#count-down{
+    margin-top:66px;
+}
+#one{
+    border-radius: 50%;
+    padding: 16px 20px;
+    /* width: 50px; */
+    border: 1px solid gray;
+}
+
+.meeting-section{
+    height: 90vh;
+    text-align: center;
+}
+
+#meeting-imgs{
+    display: flex;
+    flex-direction: row;
+    column-gap: 35px;
+    justify-content: center;
+    margin: 30px 0px 70px 0px;
+}
+#meeting-imgs img{
+    width: 270px;
+    border-radius: 25px;
+}
+#meeting-sub-head{
+    color: #4D96A9;
+    font-size: 16px;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    line-height: 26px;
+    font-family: 'Red Hat Display', sans-serif;
+    font-weight: 900;
+    margin-bottom: 15px;
+}
+
+#meeting-main-head{
+    font-size: 40px;
+    line-height: 44px;
+    letter-spacing: 4px;
+    font-family: 'Red Hat Display', sans-serif;
+    font-weight: 900;  
+}
+
+#meeting-body{
+    color:#87879D;
+    font-size: 18px;
+    line-height: 26px;
+    font-weight:500;
+    margin: 15px 500px;
+}
+
+#pagination-thin-line{
+    margin-top: 100px;
+    width: 80px;
+    rotate: 90deg;
+}
+
+#pagination-count-down{
+    margin-top: 60px;
+}
+#two{
+    border-radius: 50%;
+    padding: 20px;
+    border: 1px solid gray;
+    background-color: #fff;
+    position: relative;
+    z-index: 2;
+}
+#footer-section{
+    position: relative;
+    z-index: 1;
+    margin-top: 35px;
+    height: 50vh;
+    background: url("assets/desktop/image-footer.jpg") top/cover no-repeat; 
+}
+
+.experience-section{
+    height: 50vh;
+    background-color: #4D96A9 ;
+    opacity: 0.8;
+    color: white;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+
+}
+
+#experience-left-text{
+    opacity: 1 !important;
+    font-size: 40px;
+    line-height: 44px;
+    font-family: 'Red Hat Display', sans-serif;
+    font-weight: 900;
+}
+
+#experience-middle-text{
+    opacity: 1 !important;
+    color:#FAFAFA;
+    font-size: 18px;
+    line-height: 26px;
+    font-weight: 400;
+}
+#experience-right-button{
+    background-color: #855FB1;
+    padding: 20px 40px;
+    border-radius: 50px;
+    color: white;
+    font-weight: 400;
+}
+/* #D9B8FF */
+#experience-right-button:hover{
+    opacity: 0.8;
+    background-color: #855FB1;
+    padding: 20px 40px;
+    border-radius: 50px;
+    color: white;
+    font-weight: 400;
+    cursor: pointer;
+}

@@ -6,26 +6,102 @@
 
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
   
+  <link rel="stylesheet" href="stylesheet.css">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Red+Hat+Display:ital,wght@0,300;0,400;0,900;1,500&display=swap" rel="stylesheet">
+
   <title>Frontend Mentor | Meet landing page</title>
 </head>
 <body>
-  Meet makes it easy to connect with others face-to-face virtually and collaborate across any device.
+  <header id="header">
+    <div class="logo">
+      <img src="assets\logo.svg" alt="loge" srcset="">
+    </div>
+  </header>
+  <main id="main">
 
-  Download v1.3
-  What is it?
+    <Section class="hero-section">
+      <div id="hero-left">
+        <img src="assets\desktop\image-hero-left.png" alt="image-profile-left">
+      </div>
 
-  01
-  Built for modern use
+      <div id="hero-middle">
+        <div id="hero-head"> Group Chat <br/> for Everyone </div>
 
-  Smarter meetings, all in one place
+        <div id="hero-body">
+          Meet makes it easy to connect with others face-to-face virtually <br/>and collaborate across any device.
+        </div>
 
-  Send messages, share files, show your screen, and record your meetings — all in one 
-  workspace. Control who can join with invite-only team access, data encryption, and data export.
+        <div id="hero-buttons">
+          <div id="hero-button-left">
+            <a id="btn-link" href="#">Download <span class="btn-version"> v1.3 </span></a>
+          </div>
 
-  02
-  Experience more together
-  Stay connected with reliable HD meetings and unlimited one-on-one and group video sessions.
+          <div id="hero-button-right">
+            <a id="btn-link" href="#"> What is it? </a>
+          </div>
+        </div>
 
-  Download v1.3
+        <div id="hero-pagination">
+          <hr id="thin-line">
+          <div id="count-down"> <span id="one"> 01 </span></div>
+        </div>
+      </div>
+
+      <div id="hero-right">
+        <img src="assets\desktop\image-hero-right.png" alt="image-profile-left">
+      </div>
+    </Section>
+
+    <section class="meeting-section">
+      <div id="meeting-imgs">
+        
+        <img src="assets\desktop\image-woman-in-videocall.jpg" alt="video-call">
+        <img src="assets\desktop\image-women-videochatting.jpg" alt="video-chatting" srcset="">      
+
+        <img src="assets\desktop\image-men-in-meeting.jpg" alt="men-in-meeting">
+
+        <img src="assets\desktop\image-man-texting.jpg" alt="man-texting">
+
+      </div>
+
+      <div id="meeting-sub-head">
+        Built for modern use
+      </div>
+
+      <div id="meeting-main-head">
+        Smarter meetings, all <br> in one place 
+      </div>
+
+      <div id="meeting-body">
+        Send messages, share files, show your screen, and record your meetings — all in one workspace. Control who can join with invite-only team access, data encryption, and data export.
+      </div>
+
+      <div id="meeting-pagination">
+        <hr id="pagination-thin-line">
+          <div id="pagination-count-down"> <span id="two"> 02 </span></div>
+      </div>
+    </section>
+ 
+  </main>
+  <footer id="footer-section">
+    <section class="experience-section">
+      <div id="experience-left-text">
+        Experience more <br> together
+      </div>
+
+      <div id="experience-middle-text">
+        Stay connected with reliable HD meetings <br>and unlimited one-on-one and group <br> video sessions.
+      </div>
+
+      <div id="experience-right-button">
+        <a id="btn-link" href="#">Download <span class="btn-version"> v1.3 </span> </span></a>
+          
+      </div>
+
+    </section>
+  </footer>
 </body>
 </html>
