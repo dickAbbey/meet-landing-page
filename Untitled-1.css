@@ -1,20 +1,3 @@
-html, body {
-    max-width: 100%;
-    overflow-x: hidden;
-}
-
-:root{
-    --ocean_blue: #4D96A9;
-    --ocean_blue_hover: #71C0D4;
-    --mauve:#855FB1 ;
-    --mauce_hover: #B18BDD;
-}
-
-body{
-    font-family: 'Red Hat Display', sans-serif;
-    color:#FAFAFA;
-} 
-
 /* Galaxy Fold */
 @media (max-width: 280px){
     .hero-section{
@@ -104,7 +87,7 @@ body{
     #footer-section{
         position: relative;
         z-index: 1;
-        margin-top: 370px !important;
+        margin-top: 183px !important;
         height: 70vh;
         background: url("assets/desktop/image-footer.jpg") top/cover no-repeat; 
     }
@@ -177,7 +160,7 @@ body{
     }
     
     #hero-head{
-        font-size: 38px;
+        font-size: 40px;
         line-height: 40px;
         font-family: 'Red Hat Display', sans-serif;
         font-weight: 900;
@@ -205,7 +188,7 @@ body{
         /* width: 100%; */
     }
     #hero-button-left{
-        background-color: var(--ocean_blue);
+        background-color: #4D96A9;
         /* width: 30%; */
         padding: 15px 20px;
         border-radius: 50px;
@@ -217,7 +200,7 @@ body{
     }
     
     #hero-button-left:hover{
-        background-color: var(--ocean_blue_hover);
+        background-color: #71C0D4;
         padding: 15px 20px;
         border-radius: 40px;
         color: white;
@@ -236,7 +219,7 @@ body{
     }
     
     #hero-button-right{
-        background-color:var(--mauve) ;
+        background-color: #855FB1;
         /* width: 20%; */
         padding: 15px 20px;
         border-radius: 40px;
@@ -247,7 +230,7 @@ body{
     }
     
     #hero-button-right:hover{
-        background-color: var(--mauce_hover);
+        background-color: #D9B8FF;
         padding: 15px 20px;
         border-radius: 50px;
         color: white;
@@ -272,7 +255,7 @@ body{
     }
     
     .meeting-section{
-        height: 60vh;
+        height: 90vh;
         text-align: center;
     }
     
@@ -347,7 +330,7 @@ body{
     
     .experience-section{
         height: 70vh;
-        background-color: var(--ocean_blue) ;
+        background-color: #4D96A9 ;
         opacity: 0.8;
         color: white;
         display: flex;
@@ -376,7 +359,7 @@ body{
         margin: 30px auto;
     }
     #experience-right-button{
-        background-color: var(--mauve);
+        background-color: #855FB1;
         padding: 15px 20px;
         border-radius: 50px;
         color: white;
@@ -385,7 +368,273 @@ body{
     
     #experience-right-button:hover{
         opacity: 0.8;
-        background-color: var(--mauce_hover) ;
+        background-color: #855FB1;
+        padding: 20px 40px;
+        border-radius: 50px;
+        color: white;
+        font-weight: 400;
+        cursor: pointer;
+    }
+}
+
+/* Small devices (landscape phones, 375px and up) */
+@media (min-width: 375px){
+
+    #header{
+        display: flex;
+        justify-content: center;
+        margin: 50px auto;
+    }
+    
+    .hero-section{
+        height: 115vh;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 100%;
+        margin-left: auto;
+    }
+    #hero-left,#hero-right{
+        /* background-color: #4D96A9;
+        margin-bottom: 500px;
+        height: 20px; */
+    }
+
+    #hero-left{
+        /* height: 70vh; */
+        /* background: url("assets/tablet/image-hero.png") top/cover no-repeat;  */
+    }
+
+    #hero-left img{
+        width: 110% !important;
+        margin-left: -20px;
+        /* background-color: #855FB1; */
+    }
+
+    #hero-right img{
+        width: 110% !important;
+        margin-left: 15px;
+        /* background-color: #4D96A9; */
+    }
+    
+    #hero-middle{
+        position: absolute;
+        margin-top: 190px;
+        text-align: center;
+        /* padding: 5px 20px; */
+        color:#28282D;
+    }
+    
+    #hero-head{
+        font-size: 40px;
+        line-height: 40px;
+        font-family: 'Red Hat Display', sans-serif;
+        font-weight: 900;
+        margin: auto 50px;
+    }
+    
+    #hero-body{
+        margin: 25px auto;
+        color:#87879D;
+        font-family: 'Red Hat Display', sans-serif;
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 26px;;
+        padding: 0px 10px 0px 10px;
+    }
+    
+    #hero-buttons{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        row-gap: 15px;
+        margin-bottom: 150px;
+        /* background-color: #28282D; */
+        /* width: 100%; */
+    }
+    #hero-button-left{
+        background-color: #4D96A9;
+        /* width: 30%; */
+        padding: 15px 20px;
+        border-radius: 50px;
+        color: white;
+        font-family: 'Red Hat Display', sans-serif;
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 26px;
+    }
+    
+    #hero-button-left:hover{
+        background-color: #71C0D4;
+        padding: 15px 20px;
+        border-radius: 40px;
+        color: white;
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 26px;
+    }
+    
+    #btn-link{
+        text-decoration: none;
+        color: white;
+    }
+    
+    .btn-version{
+        color:#8FE3F9;
+    }
+    
+    #hero-button-right{
+        background-color: #855FB1;
+        /* width: 20%; */
+        padding: 15px 20px;
+        border-radius: 40px;
+        color: white;
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 26px;
+    }
+    
+    #hero-button-right:hover{
+        background-color: #D9B8FF;
+        padding: 15px 20px;
+        border-radius: 50px;
+        color: white;
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 26px;
+    }
+    
+    
+    #thin-line{
+        width: 100px;
+        rotate: 90deg;
+    }
+    
+    #count-down{
+        margin-top:69px;
+    }
+    #one{
+        border-radius: 50%;
+        padding: 20px 23px;
+        border: 1px solid gray;
+    }
+    
+    .meeting-section{
+        height: 90vh;
+        text-align: center;
+    }
+    
+    #meeting-imgs{
+        display: grid;
+        grid-template-columns: auto auto;
+        /* flex-direction: row; */
+        row-gap: 18px;
+        justify-content:space-evenly;
+        margin: 140px 0px 70px 0px;
+    }
+
+    #meeting-imgs img{
+        width: 150px;
+        border-radius: 9px;
+    }
+
+    #meeting-sub-head{
+        color: #4D96A9;
+        font-size: 15px;
+        letter-spacing: 2px;
+        text-transform: uppercase;
+        line-height: 18px;
+        font-family: 'Red Hat Display', sans-serif;
+        font-weight: 900;
+        margin-bottom: 15px;
+    }
+    
+    #meeting-main-head{
+        color: #28282D;
+        font-size: 30px;
+        line-height: 30px;
+        /* letter-spacing: 2px; */
+        font-family: 'Red Hat Display', sans-serif;
+        font-weight: 900; 
+        margin: 15px 10px; 
+    }
+    
+    #meeting-body{
+        color:#87879D;
+        font-size: 15px;
+        line-height: 26px;
+        font-weight:500;
+        margin: 15px 15px;
+    }
+    
+    #pagination-thin-line{
+        margin-top: 150px;
+        width: 80px;
+        rotate: 90deg;
+    }
+    
+    #pagination-count-down{
+        margin-top: 60px;
+    }
+    #two{
+        border-radius: 50%;
+        padding: 19px 21px;
+        border: 1px solid gray;
+        background-color: #fff;
+        position: relative;
+        z-index: 2;
+        color: #28282D;
+    }
+    #footer-section{
+        position: relative;
+        z-index: 1;
+        margin-top: 205px;
+        height: 70vh;
+        background: url("assets/desktop/image-footer.jpg") top/cover no-repeat; 
+    }
+    
+    .experience-section{
+        height: 70vh;
+        background-color: #4D96A9 ;
+        opacity: 0.8;
+        color: white;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    
+    }
+    
+    #experience-left-text{
+        opacity: 1 !important;
+        font-size: 30px;
+        line-height: 30px;
+        font-family: 'Red Hat Display', sans-serif;
+        font-weight: 900;
+    }
+    
+    #experience-middle-text{
+        opacity: 1 !important;
+        color:#FAFAFA;
+        font-size: 15px;
+        line-height: 26px;
+        font-weight: 400;
+        width: 340px;
+        margin: 30px auto;
+    }
+    #experience-right-button{
+        background-color: #855FB1;
+        padding: 15px 20px;
+        border-radius: 50px;
+        color: white;
+        font-weight: 400;
+    }
+    
+    #experience-right-button:hover{
+        opacity: 0.8;
+        background-color: #855FB1;
         padding: 20px 40px;
         border-radius: 50px;
         color: white;
@@ -433,260 +682,6 @@ body{
         text-align: center;
     }
 }
-
-/* Small devices (landscape phones, 375px and up) */
-@media (min-width: 375px){
-
-    #header{
-        display: flex;
-        justify-content: center;
-        margin: 50px auto;
-    }
-    
-    .hero-section{
-        height: 115vh;
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        width: 100%;
-        margin-left: auto;
-    }
-
-    #hero-left img{
-        width: 110% !important;
-        margin-left: -20px;
-    }
-
-    #hero-right img{
-        width: 110% !important;
-        margin-left: 15px;
-    }
-    
-    #hero-middle{
-        position: absolute;
-        margin-top: 190px;
-        text-align: center;
-        color:#28282D;
-    }
-    
-    #hero-head{
-        font-size: 40px;
-        line-height: 40px;
-        font-family: 'Red Hat Display', sans-serif;
-        font-weight: 900;
-        margin: auto 50px;
-    }
-    
-    #hero-body{
-        margin: 25px auto;
-        color:#87879D;
-        font-family: 'Red Hat Display', sans-serif;
-        font-size: 18px;
-        font-weight: 400;
-        line-height: 26px;;
-        padding: 0px 10px 0px 10px;
-    }
-    
-    #hero-buttons{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        row-gap: 15px;
-        margin-bottom: 150px;
-        /* background-color: #28282D; */
-        /* width: 100%; */
-    }
-    #hero-button-left{
-        background-color: var(--ocean_blue);
-        /* width: 30%; */
-        padding: 15px 20px;
-        border-radius: 50px;
-        color: white;
-        font-family: 'Red Hat Display', sans-serif;
-        font-size: 18px;
-        font-weight: 400;
-        line-height: 26px;
-    }
-    
-    #hero-button-left:hover{
-        background-color: var(--ocean_blue_hover) ;
-        padding: 15px 20px;
-        border-radius: 40px;
-        color: white;
-        font-size: 18px;
-        font-weight: 400;
-        line-height: 26px;
-    }
-    
-    #btn-link{
-        text-decoration: none;
-        color: white;
-    }
-    
-    .btn-version{
-        color:#8FE3F9;
-    }
-    
-    #hero-button-right{
-        background-color: var(--mauve);
-        /* width: 20%; */
-        padding: 15px 20px;
-        border-radius: 40px;
-        color: white;
-        font-size: 18px;
-        font-weight: 400;
-        line-height: 26px;
-    }
-    
-    #hero-button-right:hover{
-        background-color: var(--mauce_hover) ;
-        padding: 15px 20px;
-        border-radius: 50px;
-        color: white;
-        font-size: 18px;
-        font-weight: 400;
-        line-height: 26px;
-    }
-    
-    
-    #thin-line{
-        width: 100px;
-        rotate: 90deg;
-    }
-    
-    #count-down{
-        margin-top:69px;
-    }
-    #one{
-        border-radius: 50%;
-        padding: 20px 23px;
-        border: 1px solid gray;
-    }
-    
-    .meeting-section{
-        height: 60vh;
-        text-align: center;
-    }
-    
-    #meeting-imgs{
-        display: grid;
-        grid-template-columns: auto auto;
-        /* flex-direction: row; */
-        row-gap: 18px;
-        justify-content:space-evenly;
-        margin: 140px 0px 70px 0px;
-    }
-
-    #meeting-imgs img{
-        width: 150px;
-        border-radius: 9px;
-    }
-
-    #meeting-sub-head{
-        color: #4D96A9;
-        font-size: 15px;
-        letter-spacing: 2px;
-        text-transform: uppercase;
-        line-height: 18px;
-        font-family: 'Red Hat Display', sans-serif;
-        font-weight: 900;
-        margin-bottom: 15px;
-    }
-    
-    #meeting-main-head{
-        color: #28282D;
-        font-size: 30px;
-        line-height: 30px;
-        /* letter-spacing: 2px; */
-        font-family: 'Red Hat Display', sans-serif;
-        font-weight: 900; 
-        margin: 15px 10px; 
-    }
-    
-    #meeting-body{
-        color:#87879D;
-        font-size: 15px;
-        line-height: 26px;
-        font-weight:500;
-        margin: 15px 15px;
-    }
-    
-    #pagination-thin-line{
-        margin-top: 150px;
-        width: 80px;
-        rotate: 90deg;
-    }
-    
-    #pagination-count-down{
-        margin-top: 60px;
-    }
-    #two{
-        border-radius: 50%;
-        padding: 19px 21px;
-        border: 1px solid gray;
-        background-color: #fff;
-        position: relative;
-        z-index: 2;
-        color: #28282D;
-    }
-    #footer-section{
-        position: relative;
-        z-index: 1;
-        margin-top: 205px;
-        height: 70vh;
-        background: url("assets/desktop/image-footer.jpg") top/cover no-repeat; 
-    }
-    
-    .experience-section{
-        height: 70vh;
-        background-color: #4D96A9 ;
-        opacity: 0.8;
-        color: white;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        text-align: center;
-    
-    }
-    
-    #experience-left-text{
-        opacity: 1 !important;
-        font-size: 30px;
-        line-height: 30px;
-        font-family: 'Red Hat Display', sans-serif;
-        font-weight: 900;
-    }
-    
-    #experience-middle-text{
-        opacity: 1 !important;
-        color:#FAFAFA;
-        font-size: 15px;
-        line-height: 26px;
-        font-weight: 400;
-        width: 340px;
-        margin: 30px auto;
-    }
-    #experience-right-button{
-        background-color: var(--mauve);
-        padding: 15px 20px;
-        border-radius: 50px;
-        color: white;
-        font-weight: 400;
-    }
-    
-    #experience-right-button:hover{
-        opacity: 0.8;
-        background-color:var(--mauce_hover);
-        padding: 20px 40px;
-        border-radius: 50px;
-        color: white;
-        font-weight: 400;
-        cursor: pointer;
-    }
-}
-
 
 /* iphone 12 pro */
 @media (min-width: 390px){
@@ -922,7 +917,7 @@ body{
         margin-bottom: 150px;
     }
     #hero-button-left{
-        background-color: var(--ocean_blue);
+        background-color: #4D96A9;
         width: 25%;
         padding: 20px 30px;
         border-radius: 50px;
@@ -934,7 +929,7 @@ body{
     }
     
     #hero-button-left:hover{
-        background-color: var(--ocean_blue_hover) ;
+        background-color: #71C0D4;
         padding: 20px 30px;
         border-radius: 50px;
         color: white;
@@ -953,7 +948,7 @@ body{
     }
     
     #hero-button-right{
-        background-color: var(--mauve);
+        background-color: #855FB1;
         width: 20%;
         padding: 20px 30px;
         border-radius: 50px;
@@ -964,7 +959,7 @@ body{
     }
     
     #hero-button-right:hover{
-        background-color: var(--mauce_hover);
+        background-color: #D9B8FF;
         padding: 20px 30px;
         border-radius: 50px;
         color: white;
@@ -1091,7 +1086,7 @@ body{
         width: 450px;
     }
     #experience-right-button{
-        background-color: var(--mauve);
+        background-color: #855FB1;
         padding: 20px 40px;
         border-radius: 50px;
         color: white;
@@ -1100,7 +1095,7 @@ body{
     
     #experience-right-button:hover{
         opacity: 0.8;
-        background-color: var(--mauce_hover);
+        background-color: #855FB1;
         padding: 20px 40px;
         border-radius: 50px;
         color: white;
@@ -1172,7 +1167,7 @@ body{
         margin-bottom: 150px;
     }
     #hero-button-left{
-        background-color: var(--ocean_blue);
+        background-color: #4D96A9;
         padding: 20px 30px;
         border-radius: 50px;
         color: white;
@@ -1183,7 +1178,7 @@ body{
     }
     
     #hero-button-left:hover{
-        background-color: var(--ocean_blue_hover);
+        background-color: #71C0D4;
         padding: 20px 30px;
         border-radius: 50px;
         color: white;
@@ -1202,7 +1197,7 @@ body{
     }
     
     #hero-button-right{
-        background-color: var(--mauve) ;
+        background-color: #855FB1;
         padding: 20px 30px;
         border-radius: 50px;
         color: white;
@@ -1212,7 +1207,7 @@ body{
     }
     
     #hero-button-right:hover{
-        background-color: var(--mauce_hover);
+        background-color: #D9B8FF;
         padding: 20px 30px;
         border-radius: 50px;
         color: white;
@@ -1311,7 +1306,7 @@ body{
     
     .experience-section{
         height: 40vh;
-        background-color: var(--ocean_blue) ;
+        background-color: #4D96A9 ;
         opacity: 0.8;
         color: white;
         display: flex;
@@ -1338,10 +1333,10 @@ body{
         line-height: 26px;
         font-weight: 400;
         width: 550px;
-        margin: -20px 0px;
+        margin: -70px 0px;
     }
     #experience-right-button{
-        background-color: var(--mauve) ;
+        background-color: #855FB1;
         padding: 20px 40px;
         border-radius: 50px;
         color: white;
@@ -1350,7 +1345,7 @@ body{
     
     #experience-right-button:hover{
         opacity: 0.8;
-        background-color: var(--mauce_hover);
+        background-color: #855FB1;
         padding: 20px 40px;
         border-radius: 50px;
         color: white;
@@ -1384,10 +1379,13 @@ body{
     #hero-left img{
         width: 120% !important;
         margin-left: -45px;
+        /* background-color: #855FB1; */
     }
 
     #hero-right img{
         width: 120% !important;
+        /* margin-left: -55px; */
+        /* background-color: #4D96A9; */
     }
 
     #meeting-imgs img{
@@ -1429,6 +1427,11 @@ body{
         margin-left: auto;
     }
 
+    #hero-left img, #hero-right img{
+        /* width: 130% !important; */
+        /* margin-left: -30px !important;  */
+        /* background-color: #28282D; */
+    }
     
     #hero-middle{
         position: relative !important;
@@ -1466,7 +1469,7 @@ body{
         margin-bottom: 150px;
     }
     #hero-button-left{
-        background-color: var(--ocean_blue);
+        background-color: #4D96A9;
         padding: 20px 30px;
         border-radius: 50px;
         color: white;
@@ -1477,7 +1480,7 @@ body{
     }
     
     #hero-button-left:hover{
-        background-color: var(--ocean_blue_hover);
+        background-color: #71C0D4;
         padding: 20px 30px;
         border-radius: 50px;
         color: white;
@@ -1632,7 +1635,7 @@ body{
         width: 300px;
     }
     #experience-right-button{
-        background-color: var(--mauve);
+        background-color: #855FB1;
         padding: 20px 40px;
         border-radius: 50px;
         color: white;
@@ -1642,7 +1645,7 @@ body{
     
     #experience-right-button:hover{
         opacity: 0.8;
-        background-color:var(--mauce_hover);
+        background-color: #855FB1;
         padding: 20px 40px;
         border-radius: 50px;
         color: white;
@@ -1660,14 +1663,16 @@ body{
         flex-direction: row;
         justify-content: space-between;
         width: 100% !important;
+        /* margin-left: auto !important; */
     }
 
     #hero-middle{
         position: relative !important;
-        margin-top: -25px !important;
+        margin: auto !important;
         text-align: center;
         padding: 0px 0px !important;
         color:#28282D;
+        /* width: 550px; */
     }
 
     #hero-head{
@@ -1676,12 +1681,10 @@ body{
         line-height: 54px;
         font-family: 'Red Hat Display', sans-serif;
         font-weight: 900;
-        width: 65% !important;
-        margin-left: 30px !important;
-    }
-
-    #hero-body{
-        padding: 0px 30px !important;
+        /* width: 550px; */
+        margin-right: 150px !important;
+        padding: auto 500px !important;
+        background-color: #4D96A9;
     }
 
     #hero-left,#hero-right{
@@ -1691,11 +1694,13 @@ body{
     #hero-left img{
         width: 100% !important;
         margin-left: 0px !important;
+        /* background-color: #855FB1; */
     }
 
     #hero-right img{
         width:100% !important;
         margin-left: 0px !important;
+        /* background-color: #4D96A9; */
     }
 
     #meeting-imgs img{
@@ -1718,58 +1723,9 @@ body{
     #footer-section{
         position: relative;
         z-index: 1;
-        margin-top: 165px !important;
+        margin-top: 180px !important;
         height: 50vh;
         background: url("assets/desktop/image-footer.jpg") top/cover no-repeat; 
-    }
-
-    .experience-section{
-        height: 50vh;
-        background-color: var(--ocean_blue) ;
-        opacity: 0.8;
-        color: white;
-        display: flex;
-        flex-direction: row;
-        text-align: start;
-        /* align-items: end; */
-        justify-content: space-between !important;
-        /* padding: auto 50px !important; */
-    }
-    
-    #experience-left-text{
-        opacity: 1 !important;
-        font-size: 35px;
-        line-height: 44px;
-        font-family: 'Red Hat Display', sans-serif;
-        font-weight: 900;
-        padding-left: 50px;
-    }
-    
-    #experience-middle-text{
-        opacity: 1 !important;
-        color:#FAFAFA;
-        font-size: 18px;
-        line-height: 26px;
-        font-weight: 400;
-        width: 300px;
-    }
-    #experience-right-button{
-        background-color: var(--mauve) ;
-        padding: 20px 40px;
-        border-radius: 50px;
-        color: white;
-        font-weight: 400;
-        margin-right: 50px !important;
-    }
-    
-    #experience-right-button:hover{
-        opacity: 0.8;
-        background-color: var(--mauce_hover);
-        padding: 20px 40px;
-        border-radius: 50px;
-        color: white;
-        font-weight: 400;
-        cursor: pointer;
     }
 }
 
@@ -1785,9 +1741,8 @@ body{
     #hero-middle{
         margin: auto;
         text-align: center;
-        padding: 5px 20px !important;
+        padding: 5px 20px;
         color:#28282D;
-        width: 100% !important;
     }
 
     .hero-section{
@@ -1810,6 +1765,7 @@ body{
         line-height: 54px;
         font-family: 'Red Hat Display', sans-serif;
         font-weight: 900;
+        padding: auto 40px;
     }
     
     #hero-body{
@@ -1829,7 +1785,7 @@ body{
         margin-bottom: 150px;
     }
     #hero-button-left{
-        background-color: var(--ocean_blue) ;
+        background-color: #4D96A9;
         padding: 20px 30px;
         border-radius: 50px;
         color: white;
@@ -1840,7 +1796,7 @@ body{
     }
     
     #hero-button-left:hover{
-        background-color: var(--ocean_blue_hover);
+        background-color: #71C0D4;
         padding: 20px 30px;
         border-radius: 50px;
         color: white;
@@ -1859,7 +1815,7 @@ body{
     }
     
     #hero-button-right{
-        background-color: var(--mauve);
+        background-color: #855FB1;
         padding: 20px 30px;
         border-radius: 50px;
         color: white;
@@ -1869,7 +1825,7 @@ body{
     }
     
     #hero-button-right:hover{
-        background-color: var(--mauce_hover);
+        background-color: #D9B8FF;
         padding: 20px 30px;
         border-radius: 50px;
         color: white;
@@ -1993,7 +1949,7 @@ body{
         width: 350px;
     }
     #experience-right-button{
-        background-color:var(--mauve) ;
+        background-color: #855FB1;
         padding: 20px 40px;
         border-radius: 50px;
         color: white;
@@ -2002,7 +1958,7 @@ body{
     
     #experience-right-button:hover{
         opacity: 0.8;
-        background-color: var(--mauce_hover) ;
+        background-color: #855FB1;
         padding: 20px 40px;
         border-radius: 50px;
         color: white;
@@ -2013,50 +1969,27 @@ body{
 
 /* Hest Hup Max */
 @media (min-width: 1280px){
-    #header{
-        display: flex;
-        justify-content: center;
-        margin: 50px auto;
-    }
-    
     .hero-section{
-        height: 50vh;
+        height: 60vh;
         display: flex;
         flex-direction: row;
         justify-content: space-between;
-        margin-left: auto;
     }
 
-    #hero-left img, #hero-right img{
-        width: 100% !important;
-    }
-    
     #hero-middle{
-        position: relative !important;
-        margin-top: 30px !important;
+        margin: auto;
         text-align: center;
+        padding: 25px 200px;
         color:#28282D;
-        width: 500px !important;
     }
     
     #hero-head{
-        font-size: 54px;
-        line-height: 54px;
+        font-size: 64px;
+        line-height: 64px;
         font-family: 'Red Hat Display', sans-serif;
         font-weight: 900;
-        padding: 0px 70px;
+        padding: auto 100px!important; 
     }
-    
-    #hero-body{
-        margin: 30px auto;
-        color:#87879D;
-        font-family: 'Red Hat Display', sans-serif;
-        font-size: 18px;
-        font-weight: 400;
-        line-height: 26px;
-        padding: 0px 0px !important;
-    }
-
     #count-down{
         margin-top:66px;
     }
@@ -2110,16 +2043,12 @@ body{
         flex-direction: row;
         justify-content: space-between;
     }
-
-    #hero-left img, #hero-right img{
-        width: auto !important;
-    }
     
     #hero-middle{
         margin: auto;
         text-align: center;
+        /* padding: 25px 90px !important; */
         color:#28282D;
-        width: 100% !important;
     }
     
     #hero-head{
@@ -2127,7 +2056,8 @@ body{
         line-height: 64px;
         font-family: 'Red Hat Display', sans-serif;
         font-weight: 900;
-        padding: 0px 90px !important; 
+        padding: 0px 90px !important;
+        /* padding: auto 40px !important; */
     }
     
     #hero-body{
@@ -2150,7 +2080,7 @@ body{
         /* background-color: #4D96A9; */
     }
     #hero-button-left{
-        background-color: var(--ocean_blue);
+        background-color: #4D96A9;
         padding: 15px 30px;
         border-radius: 50px;
         color: white;
@@ -2161,7 +2091,7 @@ body{
     }
     
     #hero-button-left:hover{
-        background-color: var(--ocean_blue_hover);
+        background-color: #71C0D4;
         padding: 15px 30px;
         border-radius: 50px;
         color: white;
@@ -2180,7 +2110,7 @@ body{
     }
     
     #hero-button-right{
-        background-color: var(--mauve) ;
+        background-color: #855FB1;
         padding: 15px 30px;
         border-radius: 50px;
         color: white;
@@ -2190,7 +2120,7 @@ body{
     }
     
     #hero-button-right:hover{
-        background-color: var(--mauce_hover);
+        background-color: #B18BDD;
         padding: 15px 30px;
         border-radius: 50px;
         color: white;
@@ -2316,7 +2246,7 @@ body{
     }
     #experience-right-button{
         opacity: 1 !important;
-        background-color: var(--mauve) ;
+        background-color: #855FB1;
         padding: 20px 40px;
         border-radius: 50px;
         color: white;
@@ -2325,7 +2255,7 @@ body{
     
     #experience-right-button:hover{
         opacity: 0.8;
-        background-color: var(--mauce_hover);
+        background-color: #B18BDD;
         padding: 20px 40px;
         border-radius: 50px;
         color: white;
