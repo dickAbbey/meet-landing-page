@@ -1134,7 +1134,7 @@ body{
 
     #hero-right img{
         width: 110% !important;
-        margin-left: 0px;
+        margin-left: 30px;
         /* background-color: #4D96A9; */
     }
     
@@ -1381,13 +1381,23 @@ body{
         margin-left: auto;
     }
 
+    #hero-middle{
+        /* position: absolute; */
+        /* margin-top: 190px; */
+        /* text-align: center; */
+        color:#28282D;
+    }
+
     #hero-left img{
-        width: 120% !important;
-        margin-left: -45px;
+        width: 100% !important;
+        /* width: 120% !important; */
+        margin-left: 15px !important;
     }
 
     #hero-right img{
-        width: 120% !important;
+        width: 100% !important;
+        /* width: 120% !important; */
+        margin-right: 15px;
     }
 
     #meeting-imgs img{
@@ -2104,8 +2114,8 @@ body{
         margin: 50px auto;
     }
     
-    .hero-section{
-        height: 80vh;
+    .hero-section{ 
+        height: 85vh;
         display: flex;
         flex-direction: row;
         justify-content: space-between;
@@ -2216,7 +2226,7 @@ body{
     }
     
     .meeting-section{
-        height: 90vh;
+        height: 95vh;
         text-align: center;
     }
     
