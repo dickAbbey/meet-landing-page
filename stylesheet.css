@@ -1,6 +1,7 @@
 html, body {
     max-width: 100%;
-    overflow-x: hidden;
+    overflow-x: hidden !important;
+    box-sizing: border-box !important;
 }
 
 :root{
@@ -2291,7 +2292,7 @@ body{
     #footer-section{
         position: relative;
         z-index: 1;
-        margin-top: 3px !important;
+        margin-top: -38px !important;
         height: 50vh;
         background: url("assets/desktop/image-footer.jpg") top/cover no-repeat; 
     }
